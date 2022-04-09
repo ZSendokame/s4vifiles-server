@@ -24,5 +24,3 @@ def readme():
 @app.get('/download/<filename>')
 def returnFile(filename):
     return send_file('./files//' + filename)
-
-app.run()
